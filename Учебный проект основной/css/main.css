@@ -5,8 +5,13 @@ html, body {
 	height: 100%;
 }
 a {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
     text-decoration: none;
-    color: black;
+    font-family: Courier;
+    font-style: italic;
+    color: rgb(5, 11, 94);
 }
 a:hover {
     text-decoration: underline;
@@ -16,29 +21,39 @@ header {
     height: 100px;
     display: flex;
     flex-direction: row;
+    box-shadow: 5px 5px 50px rgb(228, 228, 228);
+ /*   background-color: blanchedalmond; */
 }
 header div {
-    width: 20%;
+    width: 10%;
+  /*  background-color: rgb(196, 29, 29); */
 }
 header div img{
-    width: 100%;
     height: 100%;
+
 }
 header nav {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
     width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+ /*   background-color: cyan; */
 }
 header nav div { 
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  /*  background-color: darkgreen; */
+}
+.probe {
+  /*  background-color: darkkhaki; */
+    width: 1920px;
+    height: 200px;
 }
 
