@@ -10,7 +10,7 @@
 <body>
 	<header>
 		<div>
-			<a href="index.html"><img src="images/LogoDISKor.PNG" alt=""></a>
+			<a href="index.html"><img src="images/LogoDISKorInvBlack.PNG" alt=""></a>
 		</div>
 		<nav>
 			<div><a href="#">Расчет больничного листа</a></div>
@@ -21,8 +21,15 @@
 			<div><a href="#">Меню6</a></div>
 		</nav>
 	</header>
+	<input onclick="popupOpen()" type="button" value="Помощник">
+	<div id="popup" class = "popup">
+		<span onclick="popupClose()" class = "popupClose"></span>
+	</div>
 	<div class="probe">
 		Больничный
 	</div>
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>	
+	<script type="text/javascript" src="js/max.js"></script>
 </body>
 </html>

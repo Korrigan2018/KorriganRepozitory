@@ -1,7 +1,8 @@
-buttonHelpMain.onclick = () => {
-    alert("Привет!");
-}
+let popup = document.getElementById('popup');
 
-button2.onclick = () => {
-    alert("Привет!2");
+popupOpen = () => {
+    popup.style.display = 'block';
+}
+popupClose = () => {
+    popup.style.display = 'none';
 }
