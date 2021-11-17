@@ -136,5 +136,14 @@ header nav {
     background-color: rgba(252, 20, 0, 0.8);
     transform: rotate(720deg);
 }
+
+.arrow14 {
+    position: fixed;
+    top: 60px;
+    left: 250px;
+    width: 100px;
+    height: 250px;
+
+}
  
 
