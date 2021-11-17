@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body {
+	height: 100%;
+}
+/*.modal {*/
+     /* произвольные стили */
+  /*background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px2px2pxrgba(0,0,0,0.2);
+  height:200px;
+  width:300px;
+ 
+  /* измените positionнаfixed, если хотите предотвратить прокрутку диалога, и отцентрируйте его */
+  /*position:fixed;
+  top:50%;
+  left:50%;
+  margin-left: -150px;
+  margin-top:-100px;
+}
+.modal::backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}*/
+a {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    font-family: Courier;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 50px rgb(182, 182, 182);
+   /* background-color: rgb(255, 127, 22);*/
+   /* градиентная заливка скачана с сайта http://css.yoksel.ru/background-blend-mode/ - очень интересная тема */
+   background:  linear-gradient(45deg, rgba(255, 255, 255, 0) 65%, #ffdd33 65%), 
+                linear-gradient(-45deg, rgba(255, 255, 255, 0) 65%, #ffdd33 65%), 
+                linear-gradient(135deg, rgba(255, 255, 255, 0) 65%, #ffdd33 65%), 
+                linear-gradient(-135deg, rgba(255, 255, 255, 0) 65%, #ffdd33 65%), 
+                linear-gradient(45deg, #ffdd33, #ffd500 25%, rgba(255, 255, 255, 0) 25%), 
+                linear-gradient(-45deg, #ffdd33, #ffd500 25%, rgba(255, 255, 255, 0) 25%), 
+                linear-gradient(135deg, #ffdd33, #ffd500 25%, rgba(255, 255, 255, 0) 25%), 
+                linear-gradient(-135deg, #ffdd33, #ffd500 25%, rgba(255, 255, 255, 0) 25%), 
+                linear-gradient(45deg, rgba(255, 255, 255, 0) 20%, #ffdd33 40%, #ffd500 60%, 
+                    rgba(255, 255, 255, 0) 60%), 
+                linear-gradient(-45deg, rgba(255, 255, 255, 0) 20%, #ffdd33 40%, #ffd500 60%, 
+                    rgba(255, 255, 255, 0) 60%);
+   background-size: 2em 4.5em;
+   background-color: gold;
+   background-blend-mode: multiply;
+}
+header div {
+    width: 10%;
+  /*  background-color: rgb(196, 29, 29); */
+}
+header div img{
+    height: 100%;
+
+}
+header nav {
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+ /*   background-color: cyan; */
+}
+/*header nav div { 
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgreen; 
+}*/
+
+ .popup {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    z-index: 10;
+    position: fixed;
+    display: none;
+ }
+
+ .popupClose {
+    /*color: #aaa;
+    background-color: red;
+    font-size: 50px;
+    font-weight: bold;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    background-color: #3d3d3dcc;
+    transition: transform ease 1.5s;
+}
+ .popupClose::before {
+     
+    color: rgba(255, 255, 255, 0.9);
+    content: '\2715';
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+    
+}
+ .popupClose:hover {
+    /*color: #aaa;
+    background-color: red;
+    font-size: 50px;
+    font-weight: bold;*/
+    background-color: rgba(252, 20, 0, 0.8);
+    transform: rotate(720deg);
+}
+ 
+
